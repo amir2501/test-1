@@ -1,0 +1,136 @@
+footer {
+  max-width: 80vw;
+  background-color: #ffeae3;
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  margin: auto;
+  scroll-behavior: smooth;
+
+  ul li {
+    list-style-type: none;
+    padding-bottom: 1rem;
+  }
+
+  ul {
+    padding: 0rem 1rem;
+  }
+
+  ul li a {
+    text-decoration: none;
+  }
+
+  ul li a:hover {
+    font-style: italic;
+    scale: 1.1;
+  }
+
+  dl dd p {
+    max-width: 25rem;
+    line-height: 2;
+  }
+
+  dl dt h1 {
+    padding-bottom: 1rem;
+  }
+
+  h1 {
+    color: #121481;
+  }
+
+  .for-mobile {
+    display: none;
+  }
+}
+#bottom {
+  max-width: 80vw;
+  margin: auto;
+  padding: 3rem;
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  ul li {
+    list-style-type: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+  a:hover {
+    font-style: italic;
+    scale: 1.1;
+  }
+}
+
+#last-span {
+  color: #1214816c;
+  font-size: 1rem;
+  text-align: center;
+  width: 100vw;
+  word-spacing: 0.4rem;
+  position: absolute;
+  padding-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    min-width: 100vw;
+    width: 100wv;
+    margin: 0px !important;
+
+    ul {
+      padding: 2rem 0rem;
+    }
+    ul li {
+      padding-bottom: 1rem;
+    }
+
+    dl dt h1 {
+      padding-bottom: 1rem;
+    }
+    ul {
+      padding: 0.5rem 0rem !important;
+    }
+
+    .for-mobile {
+      display: block;
+    }
+  }
+
+  #last-span {
+    display: none;
+  }
+
+  #bottom {
+    padding: 1rem;
+
+    a {
+      display: none;
+    }
+  }
+}

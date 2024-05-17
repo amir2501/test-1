@@ -1,0 +1,133 @@
+header nav .logo {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+}
+header nav .logo span {
+  color: #222831;
+}
+
+.main {
+  margin-top: 3rem;
+  max-width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 10vw;
+}
+
+nav {
+  background: #ffeae3;
+  display: flex;
+  position: fixed;
+  top: 0px;
+  width: 100vw;
+  z-index: 10;
+  padding: 1rem 0rem;
+}
+
+header ul {
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+header ul li a {
+  text-align: center;
+  padding: 1rem 20px;
+  color: #222831;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+header ul li a:hover {
+  text-decoration: underline;
+}
+nav input {
+  width: 40px;
+  aspect-ratio: 1;
+  display: none;
+  overflow: hidden;
+  margin: 10px 20px 10px auto;
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+nav input:before,
+nav input:after {
+  content: "";
+  grid-area: 1/1;
+  transition: 0.3s;
+}
+nav input:before {
+  background: radial-gradient(closest-side at 12.5% 25%, #222831 96%, #0000) 0 0/80%
+      40%,
+    linear-gradient(#222831 50%, #0000 0) top/80% 40% repeat-y;
+}
+nav input:after {
+  padding: 10%;
+  background: radial-gradient(closest-side at 50% 12.5%, #222831 96%, #0000) top /
+      20% 80% repeat-y,
+    radial-gradient(closest-side at 12.5% 50%, #222831 96%, #0000) left/80% 20%
+      repeat-x,
+    conic-gradient(from 90deg at 33% 33%, #0000 90deg, #222831 0) 100% 100%/60%
+      60% padding-box content-box;
+  transform: translate(-100%) translateZ(0) rotate(45deg);
+  opacity: 0;
+}
+nav input:checked:before {
+  transform: translate(100%);
+  opacity: 0;
+}
+nav input:checked:after {
+  transform: translate(0) translateZ(0) rotate(45deg);
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  header {
+    ul {
+      position: fixed;
+      background: inherit;
+      flex-direction: column;
+      inset: 0 0 0;
+      padding: 40px;
+      margin: 0;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      transform: translate(-100%);
+      opacity: 0;
+      transition: 0.3s;
+    }
+    nav input {
+      display: grid;
+      z-index: 3;
+    }
+    nav input:checked + ul {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+a,
+span,
+button {
+  color: #564147;
+}
+
+p {
+  color: #bda5ac;
+}

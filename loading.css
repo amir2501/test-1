@@ -1,0 +1,28 @@
+#loading {
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: 10000;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem;
+
+  img {
+    animation: rotate 1s infinite;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
