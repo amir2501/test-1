@@ -254,7 +254,7 @@ img:nth-child(6) {
   display: none;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1020px) {
   .main #img {
     height: 80vh;
     width: 80vw;
