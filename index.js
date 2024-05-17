@@ -2,13 +2,16 @@
 
 document.onreadystatechange = function () {
   var state = document.readyState;
+  document.getElementById("nav").classList.add("hidden");
   if (state == "complete") {
     setTimeout(function () {
       document.getElementById("interactive");
       document.getElementById("loading").style.display = "none";
+      document.getElementById("nav").classList.remove("hidden");
     }, 1000);
   }
 };
+
 //  end of loading screen script
 
 var prevScrollpos = window.pageYOffset;
