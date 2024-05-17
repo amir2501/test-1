@@ -9,6 +9,7 @@
   align-items: center;
   flex-direction: column;
   padding: 5rem;
+  top: 0px;
 
   img {
     animation: rotate 1s infinite;
