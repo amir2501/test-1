@@ -6,7 +6,7 @@ window.onscroll = function () {
     document.getElementById("img").style.width = "80vw";
   } else {
     document.getElementById("img").style.width = "100vw";
-    if (width > 800) {
+    if (width > 1020) {
       document.getElementById("absolute").style.position = "relative";
       document.getElementById("absolute").style.left = "0px";
     }
@@ -32,3 +32,66 @@ document.onreadystatechange = function () {
     }, 1000);
   }
 };
+
+function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function (e) {
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown1");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown2");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown3");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown4");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+
+  if (!e.target.matches(".dropbtn")) {
+    var myDropdown = document.getElementById("myDropdown5");
+    if (myDropdown.classList.contains("show")) {
+      myDropdown.classList.remove("show");
+    }
+  }
+};
+
+if (screen.width < 1020) {
+  document.getElementById("mobile").classList.remove("nohidden");
+  document.getElementById("desktop").classList.add("nohidden");
+}
