@@ -102,7 +102,7 @@ p {
 }
 
 .cover-for-carusel,
-.description img,
+/* .description img, */
 .looks img {
   width: 40vw;
   object-fit: cover;
@@ -197,13 +197,12 @@ img:nth-child(6) {
   min-height: 50rem;
 }
 
-.description img {
+/* .description img {
   position: relative;
   object-fit: cover;
   width: 20rem;
-  padding-bottom: 2rem;
-  min-height: 50rem;
-}
+  height: 25rem;
+} */
 
 .description dl dt h1 span {
   background-color: white;
