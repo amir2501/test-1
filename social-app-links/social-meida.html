@@ -31,10 +31,16 @@
     <link rel="stylesheet" href="../footer.css" />
     <link rel="stylesheet" href="../navbar.css" />
     <link rel="stylesheet" href="./social-meida.css" />
+    <link rel="stylesheet" href="../loading.css" />
   </head>
   <body>
+    <div id="loading">
+      <img src="../images/loading-screen-head-removebg-preview.png" alt="" />
+      <h1>Loading...</h1>
+    </div>
+
     <header>
-      <nav>
+      <nav id="nav">
         <div class="logo">
           <img
             loading="lazy"
@@ -62,12 +68,12 @@
       <article class="preview-card">
         <picture class="img">
           <source
-            srcset="../images/2-woman-mountain-2.JPG"
+            srcset="../images/2-woman-mountain-2.jpg"
             media="(max-width: 865px)"
           />
           <img
             loading="lazy"
-            src="../images/2-woman-mountain-2.JPG"
+            src="../images/2-woman-mountain-2.jpg"
             alt="product image"
           />
         </picture>
@@ -203,4 +209,5 @@
       Online Store
     </span>
   </body>
+  <script src="../index.js"></script>
 </html>
