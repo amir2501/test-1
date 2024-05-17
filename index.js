@@ -1,3 +1,16 @@
+// loading screen
+
+document.onreadystatechange = function () {
+  var state = document.readyState;
+  if (state == "complete") {
+    setTimeout(function () {
+      document.getElementById("interactive");
+      document.getElementById("loading").style.display = "none";
+    }, 1000);
+  }
+};
+//  end of loading screen script
+
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
@@ -19,16 +32,3 @@ document.querySelector("nav input").onclick = function () {
   else this.setAttribute("aria-expanded", false);
 };
 
-// loading screen
-
-document.onreadystatechange = function () {
-  var state = document.readyState;
-  document.getElementById("nav").classList.add("hidden");
-  if (state == "complete") {
-    setTimeout(function () {
-      document.getElementById("interactive");
-      document.getElementById("loading").style.display = "none";
-      document.getElementById("nav").classList.remove("hidden");
-    }, 1000);
-  }
-};
