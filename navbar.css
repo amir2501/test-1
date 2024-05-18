@@ -20,6 +20,8 @@ header nav .logo span {
 nav {
   background: #ffeae3;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0px;
   width: 100vw;
@@ -90,7 +92,7 @@ nav input:checked:after {
   opacity: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1020px) {
   header {
     ul {
       position: fixed;
