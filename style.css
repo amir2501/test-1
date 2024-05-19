@@ -111,6 +111,7 @@ p {
 .looks > img {
   width: 50%;
 }
+
 .looks > img:first-of-type {
   max-height: 80vh;
 }
