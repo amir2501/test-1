@@ -1,186 +1,692 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  transition: all 0.7s;
-  font-family: "Playfair Display", serif;
-  font-style: normal;
-  text-transform: capitalize;
-  font-weight: 500;
-  scroll-behavior: smooth;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./shop.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./loading.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
-body {
-  background-color: #f9f5f6;
-}
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/transparent-logo.png"
+    />
+  </head>
+  <body>
+    <div id="loading">
+      <img src="./images/loading-screen-head-removebg-preview.png" alt="" />
+      <h1>Loading...</h1>
+    </div>
+    <header>
+      <nav id="nav">
+        <div class="logo">
+          <img
+            loading="lazy"
+            src="./images/transparent-logo.png"
+            alt="logo"
+            width="70"
+          />
+          <span>Gulnor </span>
+        </div>
 
-main > h1 {
-  text-align: center;
-  text-transform: capitalize;
-  border-bottom: 1px solid black;
-  max-width: 80vw;
-  margin: auto;
-}
+        <input
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          aria-expanded="false"
+          aria-controls="menu"
+        />
+        <ul id="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./social-app-links/social-meida.html">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
 
-main ul {
-  display: flex;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-}
+    <main>
+      <div id="categories">
+        <h1 id="outfit">Categories</h1>
+        <ul>
+          <li><a href="#outfit">outfits</a></li>
+          <li><a href="#bag">bag</a></li>
+          <li><a href="#coat">coats</a></li>
+          <li><a href="#shoes">shoes</a></li>
+          <li><a href="#pillow">pillows</a></li>
+          <li><a href="#pillow">hat</a></li>
+        </ul>
+      </div>
+      <h1 id="outfit">Outfits</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/full-outfit.jpg" alt="" />
+          <span>Outfit 1 </span>
+        </li>
 
-main ul li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 3rem;
-  position: relative;
-}
+        <li>
+          <img loading="lazy" src="./images/with-medium-bag-2.jpg" alt="" />
+          <span>Outfit 2 </span>
+        </li>
 
-main ul li img {
-  border-radius: 10px;
-  width: 30rem;
-  height: 35rem;
-  object-fit: cover;
-  box-shadow: 2px 0px 30px rgba(0, 0, 0, 0.3);
-}
+        <li>
+          <img loading="lazy" src="./images/model.jpg" alt="" />
+          <span>Outfit 3 </span>
+        </li>
 
-main ul li span {
-  border-radius: 10px;
-  position: absolute;
-  bottom: -2%;
-  background-color: #f9f5f6;
-  padding: 1rem 2rem;
-  left: 35%;
-  text-align: center;
-  font-size: 1.8rem;
-}
+        <li>
+          <img loading="lazy" src="./images/photo-black-bacground.jpg" alt="" />
+          <span>Outfit 4 </span>
+        </li>
 
-main ul li span .hidden {
-  display: none;
-}
+        <li>
+          <img loading="lazy" src="./images/chopon.jpg" alt="" />
+          <span>Outfit 5 </span>
+        </li>
 
-main ul li:hover span {
-  bottom: 2%;
-}
+        <li>
+          <img loading="lazy" src="./images/grey-background.jpg" alt="" />
+          <span>Outfit 6 </span>
+        </li>
 
-main ul li:hover span .hidden {
-  display: block;
-}
+        <li>
+          <img loading="lazy" src="./images/full-outfit-6.jpg" alt="" />
+          <span>Outfit 7 </span>
+        </li>
 
-main ul:last-of-type {
-  margin-bottom: 10rem;
-}
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-2.jpg" alt="" />
+          <span>Outfit 8 </span>
+        </li>
 
-main ul li:hover img {
-  scale: 0.95;
+        <li>
+          <img loading="lazy" src="./images/with-medium-bag.jpg" alt="" />
+          <span>Outfit 9 </span>
+        </li>
 
-  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.6);
-}
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-1.jpg" alt="" />
+          <span>Outfit 10 </span>
+        </li>
 
-#categories {
-  ul {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-    max-width: 80vw;
-  }
+        <li>
+          <img loading="lazy" src="./images/head-1-with-model.jpg" alt="" />
+          <span>Outfit 11 </span>
+        </li>
 
-  li {
-    padding: 1rem 2rem;
-    border-radius: 1rem;
-    background-color: #ffeae3;
-    margin: 1rem;
-    width: 8rem;
-    text-align: center;
-    cursor: pointer;
-  }
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-3.jpg" alt="" />
+          <span>Outfit 12 </span>
+        </li>
 
-  li:hover {
-    background-color: #ffeae3;
-    box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.274);
-    scale: 1.2;
-  }
+        <li>
+          <img loading="lazy" src="./images/coat-8.jpg" alt="" />
+          <span>Outfit 13 </span>
+        </li>
 
-  ul li a {
-    text-decoration: none;
-  }
+        <li>
+          <img loading="lazy" src="./images/village-3.jpg" alt="" />
+          <span>Outfit 14 </span>
+        </li>
 
-  h1 {
-    text-align: center;
-    margin: auto;
-    margin-top: 7rem;
-    border-bottom: 1px solid black;
-    max-width: 80vw;
-  }
-}
+        <li>
+          <img loading="lazy" src="./images/coat-16.jpg" alt="" />
+          <span>Outfit 15 </span>
+        </li>
 
-@media (max-width: 1020px) {
-  main ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+        <li>
+          <img loading="lazy" src="./images/land-10.jpg" alt="" />
+          <span>Outfit 16 </span>
+        </li>
 
-  main ul li img {
-    width: 90vw;
-    height: 90vh;
-  }
+        <li>
+          <img loading="lazy" src="./images/coat-13.jpg" alt="" />
+          <span>Outfit 17 </span>
+        </li>
 
-  main ul li:hover img {
-    scale: 0.95;
-  }
+        <li>
+          <img loading="lazy" src="./images/land-23.jpg" alt="" />
+          <span>Outfit 18 </span>
+        </li>
+      </ul>
 
-  main ul li {
-    padding: 2rem 0px;
-  }
-  main ul li span {
-    left: 30%;
-  }
-  main ul {
-    flex-direction: column;
-  }
+      <h1 id="bag">bags</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/with-bag.jpg" alt="" />
+          <span>bag 1 </span>
+        </li>
 
-  #categories {
-    ul {
-      display: flex;
-      justify-content: start;
-      flex-direction: row;
-      flex-wrap: wrap;
-      margin: 2rem auto;
-      max-width: 90vw;
-    }
+        <li>
+          <img loading="lazy" src="./images/bag-11.JPG" alt="" />
+          <span>bag 2 </span>
+        </li>
 
-    li {
-      padding: 1rem 2rem;
-      border-radius: 1rem;
-      background-color: #ffeae3;
-      margin: 1rem;
-      width: 40%;
-      text-align: center;
-      cursor: pointer;
-    }
+        <li>
+          <img loading="lazy" src="./images/bag-2-1-with-model.jpg" alt="" />
+          <span>bag 3 </span>
+        </li>
 
-    li:hover {
-      background-color: #ffeae3;
-      box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.274);
-      scale: 1.2;
-    }
+        <li>
+          <img loading="lazy" src="./images/bag-6.jpg" alt="" />
+          <span>bag 4 </span>
+        </li>
 
-    ul li a {
-      text-decoration: none;
-    }
+        <li>
+          <img loading="lazy" src="./images/big-bag-copy.jpg" alt="" />
+          <span>bag 5 </span>
+        </li>
 
-    h1 {
-      text-align: center;
-      margin: auto;
-      margin-top: 7rem;
-      border-bottom: 1px solid black;
-      max-width: 80vw;
-    }
-  }
-}
+        <li>
+          <img loading="lazy" src="./images/bag-4.JPG" alt="" />
+          <span>bag 6 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/min-bag-copy.jpg" alt="" />
+          <span>bag 7 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-10.JPG" alt="" />
+          <span>bag 8 </span>
+        </li>
+        <li>
+          <img loading="lazy" src="./images/bag-with-model.jpg" alt="" />
+          <span>bag 9 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-3.JPG" alt="" />
+          <span>bag 10 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-3-1.jpg" alt="" />
+          <span>bag 11 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-8.jpg" alt="" />
+          <span>bag 12 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-19.jpg" alt="" />
+          <span>bag 13 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/mini-bag-15.jpg" alt="" />
+          <span>bag 14 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-21.jpg" alt="" />
+          <span>bag 15 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/mini-bag-10.JPG " alt="" />
+          <span>bag 16 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/mini-bag-1.jpg" alt="" />
+          <span>bag 17 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/mini-bag-15.jpg" alt="" />
+          <span>bag 18 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-23.jpg " alt="" />
+          <span>bag 19 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/bag-24.jpg" alt="" />
+          <span>bag 20 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/big-bag-4.jpg" alt="" />
+          <span>bag 21 </span>
+        </li>
+      </ul>
+
+      <h1 id="coat">Coats</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/chopon.jpg" alt="" />
+          <span>coat 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-1.jpg" alt="" />
+          <span>coat 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/full-outfit-2.jpg" alt="" />
+          <span>coat 3 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-2.jpg" alt="" />
+          <span>coat 4 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/full-outfit-6.jpg" alt="" />
+          <span>coat 5 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/uzbek-outfit-3.jpg" alt="" />
+          <span>coat 6 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/full-outfit-4.jpg" alt="" />
+          <span>coat 7 </span>
+        </li>
+
+        <li>
+          <img
+            loading="lazy"
+            src="./images/photo-black-background-2.jpg"
+            alt=""
+          />
+          <span>coat 8 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/plash.jpg" alt="" />
+          <span>coat 9 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/land-23.jpg" alt="" />
+          <span>coat 7 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-9.jpg" alt="" />
+          <span>coat 8 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/land-25.jpg" alt="" />
+          <span>coat 9 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/land-15.jpg" alt="" />
+          <span>coat 10 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-10.jpg" alt="" />
+          <span>coat 11 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-14.jpg" alt="" />
+          <span>coat 12 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-11.jpg" alt="" />
+          <span>coat 13 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-8.jpg" alt="" />
+          <span>coat 14 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/coat-4.jpg" alt="" />
+          <span>coat 15 </span>
+        </li>
+      </ul>
+
+      <h1 id="shoes">shoes</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/tufli-1.jpg" alt="" />
+          <span>shoes 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/lofer.jpg" alt="" />
+          <span>shoes 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/etik.jpg" alt="" />
+          <span>shoes 3 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/boots-1.jpg" alt="" />
+          <span>shoes 4 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/shoe-6.jpg" alt="" />
+          <span>shoes 5 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/tufli-2.jpg" alt="" />
+          <span>shoes 6 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/polusapok-3.jpg" alt="" />
+          <span>shoes 7 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/lofer-5.jpg" alt="" />
+          <span>shoes 8 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/boot-4.jpg" alt="" />
+          <span>shoes 9 </span>
+        </li>
+      </ul>
+
+      <h1 id="pillow">pillows</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/pillow.JPG" alt="" />
+          <span>pillow 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-2.jpeg" alt="" />
+          <span>pillow 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-2.JPG" alt="" />
+          <span>pillow 3 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-.jpg" alt="" />
+          <span>pillow 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-7.JPG" alt="" />
+          <span>pillow 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-10.JPG" alt="" />
+          <span>pillow 3 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-9.JPG" alt="" />
+          <span>pillow 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-2.jpeg" alt="" />
+          <span>pillow 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/pillow-8.JPG" alt="" />
+          <span>pillow 3 </span>
+        </li>
+      </ul>
+
+      <h1 id="pillow">Hat</h1>
+      <ul>
+        <li>
+          <img loading="lazy" src="./images/head-9.jpg" alt="" />
+          <span>hat 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/head-13.jpg" alt="" />
+          <span>hat 2 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/head-12.jpg" alt="" />
+          <span>hat 3 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/head-14.jpg" alt="" />
+          <span>hat 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/head-15.jpg" alt="" />
+          <span>hat 1 </span>
+        </li>
+
+        <li>
+          <img loading="lazy" src="./images/head-8.jpg" alt="" />
+          <span>hat 3 </span>
+        </li>
+      </ul>
+    </main>
+
+    <footer id="desktop">
+      <dl>
+        <dt>
+          <h1>Gulnor Art</h1>
+        </dt>
+        <dd>
+          <p>
+            Our company can make everything in your taste. National Uzbek
+            clothing style will add it's own part of uniqueness to your daily
+            outfit.
+          </p>
+        </dd>
+      </dl>
+
+      <ul>
+        <li>
+          <h1>Clothes:</h1>
+        </li>
+
+        <li>
+          <a href="#outfit"> outfits </a>
+        </li>
+
+        <li>
+          <a href="#bag"> bags </a>
+        </li>
+
+        <li>
+          <a href="#coat"> coats </a>
+        </li>
+
+        <li>
+          <a href="#shoe"> shoes </a>
+        </li>
+
+        <li>
+          <a href="#pillow"> pillows </a>
+        </li>
+
+        <li>
+          <a href="#hat"> hat </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <h1>Get in touch:</h1>
+        </li>
+        <li>
+          <a href="./social-app-links/social-meida.html"> contacts </a>
+        </li>
+      </ul>
+
+      <ul>
+        <li>
+          <h1>Our company:</h1>
+        </li>
+        <li>
+          <a href="./index.html"> About </a>
+        </li>
+        <li>
+          <a href="#oufit"> Shop </a>
+        </li>
+      </ul>
+      <ul class="for-mobile">
+        <li>
+          <h1>Follow us:</h1>
+        </li>
+        <li>
+          <a href="https://m.facebook.com/gulnor.art.5">Facebook</a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/gulnorart/?igsh=bmZwMHJiMXRmN3k3&utm_source=qr"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="mailto: gulnorshop@gmail.com">Email</a>
+        </li>
+        <li>
+          <a href="tel:">Phone</a>
+        </li>
+      </ul>
+    </footer>
+
+    <footer class="mobile-sersion nohidden" id="mobile">
+      <dl>
+        <dt>
+          <h1>Gulnor Art</h1>
+        </dt>
+        <dd>
+          <p>
+            Our company can make everything in your taste. National Uzbek
+            clothing style will add it's own part of uniqueness to your daily
+            outfit.
+          </p>
+        </dd>
+      </dl>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="btn1" onclick="myFunction1()">
+          Clothes
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown1">
+          <a href="#outfit">outfits</a>
+          <a href="#bag">bags</a>
+          <a href="#coat">coats</a>
+          <a href="#shoe">shoes</a>
+          <a href="#pillow">pillows</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="btn2" onclick="myFunction2()">
+          Get in touch
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown2">
+          <a href="./social-app-links/social-meida.html">contacts</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="btn3" onclick="myFunction3()">
+          our company
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown3">
+          <a href="./index.html">about</a>
+          <a href="./shop.html">clothes</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn" id="btn4" onclick="myFunction4()">
+          Follow us
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown4">
+          <a
+            href="https://www.instagram.com/gulnorart/?igsh=bmZwMHJiMXRmN3k3&utm_source=qr"
+            >Instagram</a
+          >
+          <a href="https://m.facebook.com/gulnor.art.5">Facebook</a>
+          <a href="mailto: gulnorshop@gmail.com">Email</a>
+          <a
+            href="https://www.linkedin.com/in/gulnor-art-a57200307/?originalSubdomain=uz"
+            >Linked in</a
+          >
+        </div>
+      </div>
+    </footer>
+    <div id="bottom">
+      <ul>
+        <li>
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="./images/transparent-logo.png"
+              alt="logo"
+              width="70"
+            />
+            <span>Gulnor</span>
+          </div>
+        </li>
+        <div class="links">
+          <li>
+            <a href="https://m.facebook.com/gulnor.art.5">Facebook</a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/gulnorart/?igsh=bmZwMHJiMXRmN3k3&utm_source=qr"
+              >Instagram</a
+            >
+          </li>
+
+          <li>
+            <a href="mailto: gulnorshop@gmail.com">Email</a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/gulnor-art-a57200307/?originalSubdomain=uz"
+              >Linked In</a
+            >
+          </li>
+        </div>
+      </ul>
+    </div>
+    <span id="last-span">
+      © Gulnor Art 2024 contact numbers: +1 302 770 2121 | Gulnor Art Official
+      Online Store
+    </span>
+  </body>
+  <script src="./index.js"></script>
+</html>
