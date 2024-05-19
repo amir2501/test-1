@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
     <link rel="stylesheet" href="./navbar.css" />
+    <link rel="stylesheet" href="./shop.css" />
     <link rel="stylesheet" href="./footer.css" />
     <link rel="stylesheet" href="./loading.css" />
     <!-- fonts -->
@@ -21,8 +22,6 @@
       sizes="32x32"
       href="./images/transparent-logo.png"
     />
-        <link rel="stylesheet" href="./shop.css" />
-
   </head>
   <body>
     <div id="loading">
@@ -31,23 +30,18 @@
     </div>
     <header>
       <nav id="nav">
-        <div class="logo">
-          <img
-            loading="lazy"
-            src="./images/transparent-logo.png"
-            alt="logo"
-            width="70"
-          />
-          <span>Gulnor </span>
-        </div>
+        <a href="#main" style="text-decoration: none">
+          <div class="logo">
+            <img
+              loading="lazy"
+              src="./images/transparent-logo.png"
+              alt="logo"
+              width="70"
+            />
+            <span>Gulnor</span>
+          </div>
+        </a>
 
-        <input
-          type="checkbox"
-          role="button"
-          aria-label="Display the menu"
-          aria-expanded="false"
-          aria-controls="menu"
-        />
         <ul id="menu">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./social-app-links/social-meida.html">Contacts</a></li>
@@ -55,8 +49,8 @@
       </nav>
     </header>
 
-    <main>
-      <div id="categories">
+    <main id="main">
+      <!-- <div id="categories">
         <h1 id="outfit">Categories</h1>
         <ul>
           <li><a href="#outfit">outfits</a></li>
@@ -66,7 +60,25 @@
           <li><a href="#pillow">pillows</a></li>
           <li><a href="#hat">hat</a></li>
         </ul>
+      </div> -->
+
+      <div class="sidenav">
+        <input
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          aria-expanded="false"
+          aria-controls="menu"
+          onclick="show()"
+        />
+        <a href="#outfit">outfits</a>
+        <a href="#bag">bags</a>
+        <a href="#coat">coats</a>
+        <a href="#shoes">shoes</a>
+        <a href="#pillow">pillow</a>
+        <a href="#hat">hat</a>
       </div>
+
       <h1 id="outfit">Outfits</h1>
       <ul>
         <li>
@@ -446,7 +458,7 @@
 
         <li>
           <img loading="lazy" src="./images/pillow-9.JPG" alt="" />
-          <span>pillow 7 </span>
+          <span>pillow 7</span>
         </li>
 
         <li>
