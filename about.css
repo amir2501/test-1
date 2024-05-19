@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  transition: all 0.5s;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  text-transform: capitalize;
+  font-weight: 500;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f9f5f6;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main section {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 65vw;
+  align-items: center;
+  justify-content: center;
+}
+
+section img {
+  width: 50vh;
+}
+
+section .text-box {
+  padding-left: 2rem;
+  font-size: 1.3rem;
+
+  p {
+    padding: 1rem;
+    line-height: 1.4;
+  }
+
+  h1 {
+    padding-left: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: none;
+  }
+}
