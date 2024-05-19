@@ -52,3 +52,16 @@ section .text-box {
     text-transform: none;
   }
 }
+
+@media (max-width: 1020px) {
+  main {
+    margin-top: 5rem;
+  }
+  main section {
+    flex-direction: column;
+  }
+  main img {
+    width: 100vw;
+  }
+}
+
