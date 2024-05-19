@@ -152,7 +152,7 @@ p {
   left: calc(50% - 100px);
   opacity: 0;
   animation: display 20s infinite;
-  width: 30rem;
+  width: 22rem;
   height: auto;
   object-fit: cover;
 }
