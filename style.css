@@ -157,6 +157,12 @@ p {
   object-fit: cover;
 }
 
+@media (max-width: 1600px) {
+  .pic-ctn > img {
+    width: 22rem;
+  }
+}
+
 img:nth-child(2) {
   animation-delay: 4s;
 }
