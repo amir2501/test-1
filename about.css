@@ -43,6 +43,8 @@ section .text-box {
   p {
     padding: 1rem;
     line-height: 1.4;
+        color: black;
+
   }
 
   h1 {
